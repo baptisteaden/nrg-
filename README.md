@@ -31,6 +31,6 @@ cd ..
 
 From there, you should be able to access Superset at http://localhost:8088
 
-To parse and store a bill in the database: `docker compose --profile batch run pdf_parser --type=edf ./bills/file.pdf`
+To parse and store a bill in the database: `docker compose --profile batch run --rm pdf_parser --type=edf ./bills/file.pdf`
 
 > This is just running this command in a container (so you don't have to install python and dependencies locally): `python parse.py --type=edf ./bills/file.pdf`
